@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
-  font-family: 'Courier New', Courier, monospace !important;
-}
 
-html, body, #root, .App {
-  height: 100%; 
-  background-color: #f4f4f4;
+
+body {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  font-family: 'Courier New', Courier, monospace !important;
 }
 
 .App {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
 .App-header {
