@@ -43,7 +43,7 @@ function PageHeader() {
   const getPageTitle = (path) => {
     switch(path) {
       case '/':
-        return 'ICWA Project';
+        return 'ICWA Project - Summer Semester 2023';
       case '/introduction':
         return 'Kubernetes Introduction';
       case '/architecture':
@@ -61,9 +61,12 @@ function PageHeader() {
     }
   }
   const title = getPageTitle(location.pathname);
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 0);
   return (
-    <header className="App-header">
-      <h1>{title}</h1>
+    <header className="App-header sticky-top">
+      <h1><b>{title}</b></h1>
       <NavBar />
     </header>
   );
