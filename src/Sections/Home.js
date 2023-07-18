@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { FaGithub, FaDocker } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+//import { FaGithub, FaDocker } from 'react-icons/fa';
+//import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -26,10 +26,11 @@ function Home() {
         <li>Jakob R****</li>
         <li>Joris J****</li>
         <li>Pascal L****</li>
-        <li>Skander E****</li>
+        <li>Skander B****</li>
         <li>Yichi Z****</li>
       </ul>
       <br/>
+      {/*
       <h4>Check out our project on</h4> 
       <div>
         <Link to="https://github.com/skanosBH/K8sExplorer">
@@ -41,6 +42,8 @@ function Home() {
           <FaDocker /> DockerHub
         </Link>
       </div>
+      */}
+      
     </div>
   );
 }
