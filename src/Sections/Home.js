@@ -2,6 +2,9 @@ import React from 'react';
 import '../App.css';
 //import { FaGithub, FaDocker } from 'react-icons/fa';
 //import { Link } from 'react-router-dom';
+import { Row, Col } from 'react-bootstrap';
+
+import QRCode from './Images/QRCode.png';
 
 
 function Home() {
@@ -14,22 +17,30 @@ function Home() {
         This report stems from our rigorous exploration during the course "Infrastructure and Containerization 
         for Web Applications" where we dived into Networks concepts, DNS, WWW, GNU/Linux and extensively covered Docker.
       </p>
-      <h2>Group Members</h2>
-      <ul>
-        <li>Ahmad T****</li>
-        <li>Ahmed E****</li>
-        <li>Ahmed R****</li>
-        <li>Ercan C****</li>
-        <li>Frederik H****</li>
-        <li>Glarin L****</li>
-        <li>Heinrich B****</li>
-        <li>Jakob R****</li>
-        <li>Joris J****</li>
-        <li>Pascal L****</li>
-        <li>Skander B****</li>
-        <li>Yichi Z****</li>
-      </ul>
-      <br/>
+        <Row>
+          <Col sm={8}>
+            <h2>Group Members</h2>
+            <ul>
+              <li>Ahmad T****</li>
+              <li>Ahmed E****</li>
+              <li>Ahmed R****</li>
+              <li>Ercan C****</li>
+              <li>Frederik H****</li>
+              <li>Glarin L****</li>
+              <li>Heinrich B****</li>
+              <li>Jakob R****</li>
+              <li>Joris J****</li>
+              <li>Pascal L****</li>
+              <li>Skander B****</li>
+              <li>Yichi Z****</li>
+            </ul>
+            <br/>
+          </Col>
+          <Col sm={4}>
+          <img src={QRCode} className="images" alt="QRCode" style={{ transform: 'scale(1.1)' }} />
+          </Col>
+        </Row>
+      
       {/*
       <h4>Check out our project on</h4> 
       <div>
