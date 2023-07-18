@@ -18,6 +18,20 @@ import './App.css';
 
 
 function NavBar() {
+  const handleDownloadArticle = () => {
+    const link = document.createElement('a');
+    link.href = '/pdfFiles/Report_K8s.pdf';
+    link.download = 'ICWA_Report_K8s.pdf';
+    link.type = 'application/pdf';
+    link.click();
+  };
+  const handleDownloadPresentation = () => {
+    const link = document.createElement('a');
+    link.href = '/pdfFiles/Presentation_K8s.pdf';
+    link.download = 'ICWA_Presentation_K8s.pdf';
+    link.type = 'application/pdf';
+    link.click();
+  };
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -31,6 +45,10 @@ function NavBar() {
             <Nav.Link as={Link} to="/pod">Pod</Nav.Link>
             <Nav.Link as={Link} to="/service">Service</Nav.Link>
             <Nav.Link as={Link} to="/deployment">Deployment</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link onClick={handleDownloadArticle}>Download Article</Nav.Link>
+            <Nav.Link onClick={handleDownloadPresentation}>Download Presentation</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -57,7 +75,7 @@ function PageHeader() {
       case '/deployment':
         return 'Kubernetes Deployment';
       default:
-        return 'About Kubernetes';
+        return 'ICWA Project - Summer Semester 2023';
     }
   }
   const title = getPageTitle(location.pathname);

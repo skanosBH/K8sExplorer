@@ -102,3 +102,7 @@ body {
     align-items: center;
   }
 }
+
+.navbar.navbar-expand-lg .nav-link:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css';
+import { FaGithub, FaDocker } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
   return (
     <div className="App-body">
       <h2 style={{ textAlign: 'center'}}>Technical Report: An Examination of Kubernetes within the Scope of Infrastructure and Containerization for Web Applications</h2>
-      <h2>Introduction</h2>
       <p>
         Welcome to our website, proudly presenting the Technical Report on Kubernetes meticulously crafted by a 
         team of 12 brilliant students from the University of Stuttgart during the Summer Semester of 2023. 
@@ -28,6 +29,18 @@ function Home() {
         <li>Skander E****</li>
         <li>Yichi Z****</li>
       </ul>
+      <br/>
+      <h4>Check out our project on</h4> 
+      <div>
+        <Link to="https://github.com/skanosBH/K8sExplorer">
+            <FaGithub /> GitHub
+          </Link>
+        </div>
+      <div>
+        <Link to="https://hub.docker.com/repository/docker/skanos/poc-k8s-explorer/general">
+          <FaDocker /> DockerHub
+        </Link>
+      </div>
     </div>
   );
 }
